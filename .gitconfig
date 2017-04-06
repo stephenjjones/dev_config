@@ -1,0 +1,16 @@
+# https://blog.scottnonnenberg.com/better-git-configuration/
+# https://gist.github.com/scottnonnenberg/fefa3f65fdb3715d25882f3023b31c29
+
+[user]
+  email = stephen.jacob.jones@gmail.com
+  name = Stephen Jones
+
+[alias]
+  glog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+  # prettier formated git log
+
+  stash-all = stash save --include-untracked
+  # include untracked files in stash
+
+[push]
+  default = simple
